@@ -1,0 +1,307 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== FUNDO ===== */
+body {
+  background-color: #e0e0e0;
+  font-family: "Times New Roman", serif;
+  text-align: center;
+  padding: 50px;
+  background-image: url("imagemfundo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ===== TÍTULO PRINCIPAL ===== */
+h1 {
+  font-size: 50px;
+  color: #7b1e3a;
+  margin-bottom: 40px;
+  border-bottom: 4px solid #7b1e3a;
+  padding-bottom: 15px;
+  letter-spacing: 3px;
+}
+
+/* ===== TABELA ===== */
+table {
+  margin: 40px auto;
+  width: 90%;
+  border-collapse: separate;
+  border-spacing: 30px;
+}
+
+/* ===== CÉLULAS ===== */
+td {
+  padding: 30px;
+  vertical-align: top;
+  background-color: #eed69e;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+td:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* ===== TÍTULO DO MENU (Infância / Carreira / etc.) ===== */
+.titulo-menu {
+  font-size: 28px;
+  font-weight: bold;
+  color: #7b1e3a;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-align: center;
+  border-bottom: 2px solid #7b1e3a;
+  padding-bottom: 10px;
+}
+.btn-action {
+    width: 140px;
+    height: 45px;
+    border-radius: 25px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+
+    background: linear-gradient(135deg, #310202, #000000);
+    box-shadow: 0 6px 15px rgba(71, 2, 2, 0.6);
+}
+
+.btn-game.cadastro,
+.btn-game.lista {
+    width: 140px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+
+
+
+.btn-action:hover {
+    filter: brightness(1.2);
+}
+
+/* ===== LINKS ===== */
+a {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #7b1e3a;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+a:hover {
+  color: #4a0f24;
+  transform: translateX(8px);
+}
+
+/* ===== ÁREA DO TEXTO DINÂMICO ===== */
+#celula4 {
+  border-left: 5px solid #7b1e3a;
+  min-height: 400px;
+  padding-left: 25px;
+}
+
+/* ===== TÍTULO DO CONTEÚDO (Infância formação, Carreira, etc.) ===== */
+.texto .titulo {
+  display: block;
+  font-size: 36px;
+  font-weight: bold;
+  color: #7b1e3a;
+  margin-bottom: 25px;
+  font-family: "Times New Roman", serif;
+
+  text-align: left;              /* evita espaçamento estranho */
+  border-bottom: 3px solid #7b1e3a;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+}
+/* ===== TEXTO ===== */
+.texto {
+  font-size: 20px;
+  line-height: 2;
+  text-align: justify;
+  color: #2b2b2b;
+}
+
+/* ===== IMAGENS ===== */
+.imagem-principal {
+  width: 200px;
+  height: auto;
+  margin: auto;
+}
+
+.video-principal {
+  width: 450px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.imagem {
+  width: 200px;
+  float: left;
+  margin: 0 15px 10px 0;
+  border: 2px solid #5a3a2e;
+  filter: grayscale(100%);
+}
+
+/* ===== LIMPA FLOAT ===== */
+#celula4::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ===== FORMULÁRIO LATERAL ===== */
+#formulario-lateral {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 320px;
+  background-color: #eed69e;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+#formulario-lateral h3 {
+  margin-bottom: 20px;
+  color: #7b1e3a;
+  text-align: center;
+  font-size: 22px;
+}
+
+#formulario-lateral input,
+#formulario-lateral textarea {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #7b1e3a;
+  font-family: "Times New Roman", serif;
+  font-size: 16px;
+}
+
+#formulario-lateral button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  background-color: #7b1e3a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#formulario-lateral button:hover {
+  background-color: #4a0f24;
+}
+
+
+
+/* BOTÕES AÇÃO (CADASTRO / LISTA) */
+.btn-action,
+.btn-cadastro {
+    width: 140px;
+    height: 45px;
+    border-radius: 25px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(49, 3, 3);
+    cursor: pointer;
+    font-family: "Times New Roman", serif;
+    background: linear-gradient(135deg, #7b1e3a, #4a0f24);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+}
+
+
+.btn-action:hover,
+.btn-cadastro:hover {
+    filter: brightness(1.2);
+}
+
+.btn-cadastro.cadastro,
+.btn-cadastro.lista {
+    width: 140px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+
+/* ✅ PONTO ADICIONADO AQUI */
+.cadastro-box {
+    margin: 50px auto;
+    width: 100%;
+    max-width: 500px;
+    background: rgba(129, 113, 113, 0.85);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow:
+        0 0 25px rgba(255, 0, 200, 0.3),
+        0 0 60px rgba(255, 0, 119, 0.466);
+    animation: aparecer 0.5s ease;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.btn-cadastro.salvar {
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 14px;
+}
+
+.campo label {
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+.campo input {
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 0.95rem;
+    box-shadow: inset 0 0 8px rgba(216, 199, 199, 0.7);
+}
+
+.campo input:focus {
+    box-shadow: 
+        0 0 10px rgba(37, 7, 7, 0.8),
+        inset 0 0 8px rgba(0,0,0,0.7);
+}
+

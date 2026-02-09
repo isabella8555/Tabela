@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Biografia Tchaikovsky</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Biografia de Tchaikovsky</h1>
+
+  <table align="center">
+    <tr>
+      <td>
+        <img src="01.png" class="imagem-principal" alt="Tchaikovsky">
+      </td>
+
+      <td>
+        <video class="video-principal" controls muted loop>
+          <source src="02.mp4" type="video/mp4">
+        </video>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <h3 class="titulo-menu">Seções</h3>
+
+        <a href="#" onclick="botao1(1); return false;">Infância</a><br>
+        <a href="#" onclick="botao1(2); return false;">Carreira</a><br>
+        <a href="#" onclick="botao1(3); return false;">Obras</a><br>
+        <a href="#" onclick="botao1(4); return false;">Legado</a><br>
+
+        <button class="btn-cadastro" onclick="botao1(5)">
+          Cadastro
+        </button>
+        <button onclick="window.location.href='lista.html'" class="btn-game lista">Lista</button>
+      </td>
+      
+
+      <td id="celula4"></td>
+    </tr>
+  </table>
+
+
+  <!-- CADASTRO -->
+  <div class="cadastro-box" id="cadastroBox" style="display:none">
+    <h2>Cadastro</h2>
+
+    <form id="formCadastro" class="cadastro-box">
+      <div class="campo">
+        <label>Nome completo</label>
+        <input type="text" required>
+      </div>
+
+      <div class="campo">
+        <label>Email</label>
+        <input type="email">
+      </div>
+
+      <div class="campo">
+        <label>CPF</label>
+        <input type="text" required>
+      </div>
+
+      <div class="campo">
+        <label>Endereço</label>
+        <input type="text" required>
+      </div>
+
+      <button type="submit">Salvar cadastro</button>
+    </form>
+  </div>
+
+  <script type="module" src="script.js"></script>
+
+</body>
+</html>
